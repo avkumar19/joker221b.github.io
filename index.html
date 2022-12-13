@@ -206,6 +206,119 @@
 	<br>
 
 	<hr>
+
+	<table align=center width=850px>
+		<center><h1>Motivation</h1></center>
+		<tr>
+			<td>
+				<ul>
+					
+					<li>A ConvNet requires a large Dataset to process and train the neural network.
+					</li>
+					<li>Image synthesis procedure could take up to an hour on a Nvidia K40 GPU (depending on the exact image size and the stopping criteria for the gradient descent) [1]
+					</li>
+					<li>GANs currently generate the sharpest images. 
+					</li>
+					<li>GANs work best in case of insufficient dataset.
+					</li>
+					<li>We plan to use multiple GANs such as cGAN and WCGAN to understand their performance on the task of neural style transfer.
+					</li>
+
+				  </ul>		
+			</td>
+		</tr>
+	</table>
+	<br>
+
+	<hr>
+
+	<table align=center width=850px>
+		<center><h1>NST</h1></center>
+		<tr>
+			<td>
+				<ul>
+					<li>Receives style-image, a content-image and an input image (empty white image or a copy of a content-image.)
+					</li>
+					<li>Generate an image that has the minimal distance between both content and style images.
+					</li>
+					<li>Define a content loss (MSE of the feature activations between content and target image)
+					</li>
+					<li>And a style loss (MSE of the Gram matrices of the style image and the target image)
+					</li>
+					
+				  </ul>		
+			</td>
+		</tr>
+	</table>
+	<br>
+	<center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:500px" src="./resources/t1.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+	<hr>
+
+	<table align=center width=850px>
+		<center><h1>GAN</h1></center>
+		<tr>
+			<td>
+				<ul>
+					<li>Discriminator network: try to distinguish between real and fake images.
+					</li>
+					<li>Generator network: try to fool the discriminator by generating real-looking images.
+					</li>
+				  </ul>		
+			</td>
+		</tr>
+	</table>
+	<br>
+	<center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:500px" src="./resources/t1.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+	<hr>
+
+	<table align=center width=850px>
+		<center><h1>Conditional GAN</h1></center>
+		<tr>
+			<td>
+				<ul>
+					<li>The difference between the GAN and the cGAN is that cGAN is conditional. Meaning it takes an extra input that is the label along with the noise. This teaches the Generator to create images for a particular class, hence it is called conditioning.
+					</li>
+				  </ul>		
+			</td>
+		</tr>
+	</table>
+	<br>
+	<center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:500px" src="./resources/t1.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+
+	<hr>
 	<center><h1>Talk</h1></center>
 	<p align="center">
 		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
